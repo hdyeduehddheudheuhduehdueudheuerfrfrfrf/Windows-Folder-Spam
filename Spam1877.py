@@ -25,19 +25,19 @@ def main_():
     ctypes.windll.kernel32.SetConsoleTitleW(f"Folder Spam | {r}")
 
     logo()
-    x1=input(Fade.Horizontal(Colors.green_to_cyan, "Folder name: "))
+    x1=input(Fade.Horizontal(Colors.green_to_cyan, "@> FOLDER NAME : "))
     if x1=="":
-        print(Fade.Horizontal(Colors.green_to_cyan, (f"You cant create a blank folder silly.")))
+        print(Fade.Horizontal(Colors.green_to_cyan, (f"@> YOU CAN CREATE BLANK FOLDER")))
         time.sleep(1)
         main_()
     try:
-        x=(int(input(Fade.Horizontal(Colors.green_to_cyan, "Amount of folders inside: "))))
+        x=(int(input(Fade.Horizontal(Colors.green_to_cyan, "@> NUMBER OF THREAD : "))))
     except:
-        print(Fade.Horizontal(Colors.green_to_cyan, (f"Thats not a number.")))
+        print(Fade.Horizontal(Colors.green_to_cyan, (f"@> THATS NOT NUMBER...")))
         time.sleep(1)
         main_()
     if x>300:
-        print(Fade.Horizontal(Colors.green_to_cyan, (f"Making more than 300 folders inside will end up breaking your explorer/pc.")))
+        print(Fade.Horizontal(Colors.green_to_cyan, (f"@> MAKING 300+ FOLDER BECAUSE YOU PC GET BROKEN BY ME...")))
         time.sleep(3)
         main_()
     x-1
@@ -47,20 +47,20 @@ def main_():
     for _ in range(x):
         folder+=f"/{x1}"
         x2+=1
-        print(Fade.Horizontal(Colors.green_to_cyan, (f"Folders made: {x2}")))
+        print(Fade.Horizontal(Colors.green_to_cyan, (f"@> FOLDER MADE {x2}")))
 
     os.makedirs(f"{x1}{folder}")
     time.sleep(.6)
     os.system("cls")
     logo()
 
-    print(Fade.Horizontal(Colors.green_to_cyan, (f"Successfully made folder '{x1}' with {x} folders inside.\n")))
-    open=input(Fade.Horizontal(Colors.green_to_cyan, ("Open folder(y/n): ")))
+    print(Fade.Horizontal(Colors.green_to_cyan, (f"@> SUCCESFULY MADE FOLDERS '{x1}' @> WITH {x} @> FOLDERS INSIDE.\n")))
+    open=input(Fade.Horizontal(Colors.green_to_cyan, ("@> OPEN FOLDER ? Y/N")))
     if open=="y":
         p=f"{x1}{folder}"
         p=os.path.realpath(p)
         os.startfile(p)
-    input(Fade.Horizontal(Colors.green_to_cyan, ("Thanks for using my tool!")))
+    input(Fade.Horizontal(Colors.green_to_cyan, ("@> MADE BY D1MOD1877")))
     main_()
 
 main_()
