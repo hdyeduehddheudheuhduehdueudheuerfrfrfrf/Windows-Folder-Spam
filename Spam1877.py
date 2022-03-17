@@ -22,7 +22,7 @@ def main_():
     os.system("cls")
     Cursor.HideCursor()
     os.system("mode 92, 40")
-    ctypes.windll.kernel32.SetConsoleTitleW(f"Folder Spam | {r}")
+    ctypes.windll.kernel32.SetConsoleTitleW(f"@D1MOD1877 - FOLDER SPAM | {r}")
 
     logo()
     x1=input(Fade.Horizontal(Colors.green_to_cyan, "@> FOLDER NAME : "))
